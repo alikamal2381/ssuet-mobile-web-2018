@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Protype</title>
+    <script>
+
+    // var arr = [1,2,5,8,0,234,3];
+    // var arr2 = [];
+
+    // Array.prototype.mul2 = function(){
+    //     for(let i = 0; i < this.length; i++){
+    //         arr2.push(this[i] * 2);
+    //     }
+    //     return arr2;
+    // }
+
+    // console.log(arr);
+
+    // arr2 = arr.mul2();
+    // console.log(arr2);
+
+
+    var arr = [1,2,5,8,0,234,3];
+    var arr2 = [];
+
+    function() multiply_by_n(n){
+            for(let i = 0; i < arr.length; i++){
+                arr2.push(arr[i] * n);
+            }
+            return arr2;
+    }
+
+    Array.prototype.mul_n = multiply_by_n(3);
+
+    console.log(arr);
+
+    arr2 = arr.mul_n();
+    console.log(arr2);
+
+
+
+
+    </script>
+</head>
+<body>
+    test
+ </body>
+</html>
